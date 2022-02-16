@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+<title>JavaScript - read JSON from URL</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" language="javascript" src="jquery-1.8.2.min.js"></script>        
+<script type="text/javascript" language="javascript" src="GamersCCCP.json"></script> 
+</head>
+
+<body>
+    <h2> Is this the right player you are searching? </h2>
+    <div class="mypanel"></div>
+    <script type="text/javascript">
+   $(document).ready(function(e) {
+         var text = `Username: ${jsonObject.username}<br>
+		             Level: ${jsonObject.level}<br>
+					 Portrait: ${jsonObject.portrait}`
+		 $(".mypanel").html(text);
+   });
+   </script>
+   <br>
+   <a href="E:\\\OneDrive\Documents\Player Rating System\rateplayer.htm">Rate this player</a> <br>
+   <a href="E:\\\OneDrive\Documents\Player Rating System\Landing page.htm">Back</a>
+   
+</body>
+</html>
